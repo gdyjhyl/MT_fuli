@@ -6,6 +6,9 @@
 [task_local]
 #美团外卖领红包
 0 0 9 * * *
+
+[Script]
+cron "0 0 9 * * *" script-path=https://raw.githubusercontent.com/liroBoy/MT_fuli/master/meituan_coupons.js, tag=美团外卖领红包
 */
 
 const $ = new Env('美团领红包');
